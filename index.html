@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ABINORIX | Abin Jimmy, Web Developer</title>
+  <meta name="description" content="Portfolio of Abin Jimmy, a web developer and MCA student from Kerala, India, working with PHP, Laravel, Python and Django.">
+  <meta name="theme-color" content="#06031a">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.className += " js";</script>
+</head>
+<body>
+  <div class="nebula" aria-hidden="true">
+    <i class="neb neb-a"></i><i class="neb neb-b"></i><i class="neb neb-c"></i><i class="neb neb-d"></i>
+  </div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html" aria-label="ABINORIX home">
+        <img src="assets/images/logo.svg" alt="" width="38" height="38">
+        <span>ABINORIX</span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="nav-wrap" aria-label="Main">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-wide">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow hero-in" style="--d:.15s">Hello, I'm Abin Jimmy</p>
+            <h1 class="display">
+              <span class="line hero-in" style="--d:.35s">Web</span>
+              <span class="line hero-in" style="--d:.55s">Developer</span>
+            </h1>
+            <p class="roles hero-in" style="--d:.85s">PHP | Laravel | Python | Django<br>&amp; MySQL</p>
+            <a class="btn-neon hero-in" style="--d:1.15s" href="projects.html">Explore my work</a>
+          </div>
+          <div class="portrait hero-in" style="--d:.6s">
+            <div class="portrait-float">
+              <span class="ring ring-1" aria-hidden="true"></span>
+              <span class="ring ring-2" aria-hidden="true"></span>
+              <div class="disc">
+                <img src="assets/images/abin.webp" alt="Portrait of Abin Jimmy" width="732" height="968">
+              </div>
+              <span class="chip chip-1" aria-hidden="true">PHP</span>
+              <span class="chip chip-2" aria-hidden="true">Laravel</span>
+              <span class="chip chip-3" aria-hidden="true">Django</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#explore" aria-label="Scroll down"></a>
+    </section>
+
+    <section class="section" id="explore">
+      <div class="wrap">
+        <h2>Explore</h2>
+        <div class="grid">
+          <a class="card link-card" href="about.html">
+            <span class="num">01</span>
+            <h3>About me</h3>
+            <p>Who I am and what I like to build.</p>
+            <span class="more">Read more</span>
+          </a>
+          <a class="card link-card" href="skills.html">
+            <span class="num">02</span>
+            <h3>Skills</h3>
+            <p>The languages and tools I work with.</p>
+            <span class="more">See skills</span>
+          </a>
+          <a class="card link-card" href="education.html">
+            <span class="num">03</span>
+            <h3>Education</h3>
+            <p>My studies from higher secondary to MCA.</p>
+            <span class="more">See timeline</span>
+          </a>
+          <a class="card link-card" href="projects.html">
+            <span class="num">04</span>
+            <h3>Projects</h3>
+            <p>Websites and applications I have built.</p>
+            <span class="more">View projects</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="lead">Open to junior web and software developer roles, internships and freelance projects.</p>
+        <ul class="contact-list">
+          <li><a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></li>
+          <li><a href="https://github.com/YOUR-USERNAME">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/YOUR-USERNAME">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Abin Jimmy &middot; Kottayam, Kerala, India</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
