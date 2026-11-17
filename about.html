@@ -1,36 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About | ABINORIX</title>
+  <title>About | abinorix</title>
   <meta name="description" content="About Abin Jimmy, web developer and MCA student from Kerala, India.">
-  <meta name="theme-color" content="#06031a">
+  <meta name="theme-color" content="#0c0720">
   <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script>document.documentElement.className += " js";</script>
+  <script>(function(){var r=document.documentElement,t;try{t=localStorage.getItem('abinorix-theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}r.setAttribute('data-theme',t);r.className+=' js'})();</script>
 </head>
 <body>
-  <div class="nebula" aria-hidden="true">
-    <i class="neb neb-a"></i><i class="neb neb-b"></i><i class="neb neb-c"></i><i class="neb neb-d"></i>
-  </div>
-  <canvas id="stars" aria-hidden="true"></canvas>
-  <div class="vignette" aria-hidden="true"></div>
-
+  <div class="glow" aria-hidden="true"></div>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="wrap header-row">
-      <a class="brand" href="index.html" aria-label="ABINORIX home">
+      <a class="brand" href="index.html" aria-label="abinorix home">
         <img src="assets/images/logo.svg" alt="" width="38" height="38">
-        <span>ABINORIX</span>
+        <span>abinorix<span class="dot">.</span></span>
       </a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
       <nav id="site-nav" class="nav-wrap" aria-label="Main">
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
@@ -38,38 +30,66 @@
           <li><a href="skills.html">Skills</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li class="nav-contact"><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+          <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn-outline btn-sm" href="index.html#contact">Contact</a>
+        <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="page-head">
       <div class="wrap">
-        <p class="eyebrow hero-in">About</p>
-        <h1 class="hero-in" style="--d:.2s">About <span class="accent">me</span></h1>
+        <p class="note fade-up">About</p>
+        <h1 class="fade-up" style="--d:.12s">About <span class="grad">me</span></h1>
+        <p class="sub fade-up" style="--d:.24s">A BCA graduate from Kottayam, Kerala, now pursuing an MCA.</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="prose">
-          <p>I am Abin Jimmy, a BCA graduate from Kottayam, Kerala, currently pursuing an MCA. I enjoy turning ideas into working web applications, from the database to the page the user sees.</p>
-          <p>My projects so far include shopping websites and an AI-powered toy store. I work on both Windows and Linux, and I use Git and GitHub to manage my code.</p>
-          <p>I want a career in software and web development, and I am keen to keep learning on real projects. [ADD: a line about what you enjoy, your goals, or what you are learning now.]</p>
+    <section class="section" style="padding-top:44px">
+      <div class="wrap about-grid">
+        <div class="portrait" data-r>
+          <div class="frame"><img src="assets/images/abin.webp" alt="Portrait of Abin Jimmy" width="732" height="968"></div>
+          <span class="deco spark" style="top:-4%;right:2%;width:30px;height:30px"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12 7 17 12 24 12C17 12 12 17 12 24C12 17 7 12 0 12C7 12 12 7 12 0Z"/></svg></span>
+          <span class="deco coin" style="bottom:12%;left:-4%"></span>
         </div>
-        <div class="actions">
-          <a class="btn-neon" href="projects.html">See my projects</a>
-          <a class="btn-neon btn-line" href="index.html#contact">Get in touch</a>
+        <div data-r>
+          <div class="prose">
+            <p>I am <strong>Abin Jimmy</strong>, a BCA graduate from Kottayam, Kerala, currently pursuing an MCA. I enjoy turning ideas into working web applications, from the database to the page the user sees.</p>
+            <p>My projects so far include shopping websites and an AI-powered toy store. I work on both Windows and Linux, and I use Git and GitHub to manage my code.</p>
+            <p>I want a career in software and web development, and I am keen to keep learning on real projects. [ADD: a line about what you enjoy, your goals, or what you are learning now.]</p>
+          </div>
+          <div class="facts">
+            <div class="fact"><small>Location</small><b>Kottayam, Kerala</b></div>
+            <div class="fact"><small>Studying</small><b>MCA, Santhigiri College</b></div>
+            <div class="fact"><small>Focus</small><b>Web development</b></div>
+            <div class="fact"><small>Works on</small><b>Windows and Linux</b></div>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="projects.html">See my projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+            <a class="btn btn-outline" href="index.html#contact">Get in touch</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; <span id="year">2026</span> Abin Jimmy &middot; Kottayam, Kerala, India</p>
+    <div class="wrap foot-row">
+      <a class="brand" href="index.html" aria-label="abinorix home" style="margin-right:0">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span>abinorix<span class="dot">.</span></span>
+      </a>
+      <ul class="foot-nav"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="education.html">Education</a></li><li><a href="projects.html">Projects</a></li></ul>
+      <p>&copy; <span id="year">2026</span> Abin Jimmy &middot; Kerala, India</p>
     </div>
   </footer>
 

@@ -1,36 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects | ABINORIX</title>
+  <title>Projects | abinorix</title>
   <meta name="description" content="Projects by Abin Jimmy: shopping websites built with PHP, Django and Laravel.">
-  <meta name="theme-color" content="#06031a">
+  <meta name="theme-color" content="#0c0720">
   <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script>document.documentElement.className += " js";</script>
+  <script>(function(){var r=document.documentElement,t;try{t=localStorage.getItem('abinorix-theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}r.setAttribute('data-theme',t);r.className+=' js'})();</script>
 </head>
 <body>
-  <div class="nebula" aria-hidden="true">
-    <i class="neb neb-a"></i><i class="neb neb-b"></i><i class="neb neb-c"></i><i class="neb neb-d"></i>
-  </div>
-  <canvas id="stars" aria-hidden="true"></canvas>
-  <div class="vignette" aria-hidden="true"></div>
-
+  <div class="glow" aria-hidden="true"></div>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="wrap header-row">
-      <a class="brand" href="index.html" aria-label="ABINORIX home">
+      <a class="brand" href="index.html" aria-label="abinorix home">
         <img src="assets/images/logo.svg" alt="" width="38" height="38">
-        <span>ABINORIX</span>
+        <span>abinorix<span class="dot">.</span></span>
       </a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
       <nav id="site-nav" class="nav-wrap" aria-label="Main">
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
@@ -38,61 +30,109 @@
           <li><a href="skills.html">Skills</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="projects.html" aria-current="page">Projects</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li class="nav-contact"><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+          <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn-outline btn-sm" href="index.html#contact">Contact</a>
+        <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="page-head">
       <div class="wrap">
-        <p class="eyebrow hero-in">Projects</p>
-        <h1 class="hero-in" style="--d:.2s">Things I have <span class="accent">built</span></h1>
+        <p class="note fade-up">Projects</p>
+        <h1 class="fade-up" style="--d:.12s">Things I have <span class="grad">built</span></h1>
+        <p class="sub fade-up" style="--d:.24s">Web applications built with PHP, Django and Laravel.</p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" style="padding-top:44px">
       <div class="wrap">
-        <div class="grid grid-3">
-
-          <article class="card project">
-            <p class="meta">PHP &middot; MySQL</p>
-            <h3>Online Watch Shopping Website</h3>
+        <div class="grid-3">
+          <article class="card pcard" data-r>
+            <!-- To use a real screenshot, replace the <svg> inside .art with: <img src="assets/images/YOUR-SCREENSHOT.jpg" alt="Online Watch Shopping Website screenshot"> -->
+            <div class="art art-1"><svg viewBox="0 0 300 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect x="112" y="14" width="76" height="100" rx="16" fill="rgba(255,255,255,.35)"/><rect x="112" y="246" width="76" height="100" rx="16" fill="rgba(255,255,255,.35)"/><circle cx="150" cy="180" r="88" fill="rgba(255,255,255,.94)"/><line x1="150.0" y1="118.0" x2="150.0" y2="110.0" stroke="#4f2cf0" stroke-width="4" stroke-linecap="round"/><line x1="181.0" y1="126.3" x2="185.0" y2="119.4" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="203.7" y1="149.0" x2="210.6" y2="145.0" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="212.0" y1="180.0" x2="220.0" y2="180.0" stroke="#4f2cf0" stroke-width="4" stroke-linecap="round"/><line x1="203.7" y1="211.0" x2="210.6" y2="215.0" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="181.0" y1="233.7" x2="185.0" y2="240.6" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="150.0" y1="242.0" x2="150.0" y2="250.0" stroke="#4f2cf0" stroke-width="4" stroke-linecap="round"/><line x1="119.0" y1="233.7" x2="115.0" y2="240.6" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="96.3" y1="211.0" x2="89.4" y2="215.0" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="88.0" y1="180.0" x2="80.0" y2="180.0" stroke="#4f2cf0" stroke-width="4" stroke-linecap="round"/><line x1="96.3" y1="149.0" x2="89.4" y2="145.0" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="119.0" y1="126.3" x2="115.0" y2="119.4" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="150" y1="180" x2="150" y2="128" stroke="#1b1240" stroke-width="7" stroke-linecap="round"/><line x1="150" y1="180" x2="186" y2="198" stroke="#1b1240" stroke-width="6" stroke-linecap="round"/><circle cx="150" cy="180" r="7" fill="#ec4899"/></svg></div>
+            <p class="meta" style="margin-top:18px">PHP · MySQL</p>
+            <h3 style="margin-top:6px">Online Watch Shopping Website</h3>
             <p>E-commerce web app where customers browse watches, add to cart and place orders; admins manage products and track orders. Technologies: PHP, MySQL, HTML, CSS, JavaScript.</p>
             <p class="links">
-              <a href="#" aria-label="Live demo of Online Watch Shopping Website">Live demo</a>
-              <a href="#" aria-label="Source code of Online Watch Shopping Website">Source code</a>
+              <a href="#" aria-label="Live demo of Online Watch Shopping Website">Live demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+              <a href="#" aria-label="Source code of Online Watch Shopping Website">Source code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
             </p>
           </article>
-
-          <article class="card project">
-            <p class="meta">Python &middot; Django</p>
-            <h3> Online Turf Booking Website</h3>
+          <article class="card pcard" data-r>
+            <!-- To use a real screenshot, replace the <svg> inside .art with: <img src="assets/images/YOUR-SCREENSHOT.jpg" alt="Online Mobile Shopping Cart screenshot"> -->
+            <div class="art art-2"><svg viewBox="0 0 300 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect x="82" y="40" width="136" height="280" rx="26" fill="rgba(255,255,255,.93)"/><rect x="96" y="66" width="108" height="170" rx="14" fill="rgba(79,44,240,.16)"/><g transform="translate(110 102) scale(3.2)" stroke="#4f2cf0" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></g><rect x="102" y="262" width="96" height="30" rx="15" fill="#4f2cf0"/><rect x="128" y="300" width="44" height="5" rx="3" fill="rgba(14,10,31,.25)"/></svg></div>
+            <p class="meta" style="margin-top:18px">Python · Django</p>
+            <h3 style="margin-top:6px">Online Turf Booking Website</h3>
             <p>Turf booking system with Admin, User and Training Coach modules: slot availability, online booking, booking history and coach session management. Technologies: Python, Django, SQL, HTML, CSS, JavaScript.</p>
             <p class="links">
-              <a href="#" aria-label="Live demo of Online Turf Booking Website">Live demo</a>
-              <a href="#" aria-label="Source code of Online Turf Booking Website">Source code</a>
+              <a href="#" aria-label="Live demo of Online Turf Booking Website">Live demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+              <a href="#" aria-label="Source code of Online Turf Booking Website">Source code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
             </p>
           </article>
-
-          <article class="card project">
-            <p class="meta">Laravel &middot; In development</p>
-            <h3>AI-Powered Toystore Website</h3>
+          <article class="card pcard" data-r>
+            <!-- To use a real screenshot, replace the <svg> inside .art with: <img src="assets/images/YOUR-SCREENSHOT.jpg" alt="AI-Powered Toystore Website screenshot"> -->
+            <div class="art art-3"><svg viewBox="0 0 300 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="108" cy="124" r="58" fill="rgba(255,255,255,.94)"/><rect x="150" y="150" width="112" height="112" rx="24" fill="#fde68a"/><polygon points="64,320 128,214 192,320" fill="rgba(255,255,255,.88)"/><circle cx="222" cy="92" r="24" fill="#fbbf24"/><path d="M236 190l8 16 16 8-16 8-8 16-8-16-16-8 16-8z" fill="#7c3aed" transform="translate(-60 40)"/></svg></div>
+            <p class="meta" style="margin-top:18px">Laravel · In development</p>
+            <h3 style="margin-top:6px">AI-Powered Toystore Website</h3>
             <p>E-commerce site for toys with AI-powered product recommendations and fraud product detection. Three modules: Admin, Seller, User. Built on Laravel MVC with MySQL. Technologies: Laravel, PHP, MySQL, JavaScript, Bootstrap.</p>
             <p class="links">
-              <a href="#" aria-label="Source code of AI-Powered Toystore Website">Source code</a>
+              
+              <a href="#" aria-label="Source code of AI-Powered Toystore Website">Source code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
             </p>
           </article>
+          <article class="card pcard" data-r>
+  <div class="art art-1">
+    <img src="assets/images/YOUR-SCREENSHOT.jpg" alt="PROJECT NAME screenshot">
+  </div>
+  <p class="meta" style="margin-top:18px">PHP · MySQL</p>
+  <h3 style="margin-top:6px">Loan Approval Prediction</h3>
+  <p class="desc">Machine learning project that predicts whether a loan application will be approved based on applicant details such as income, credit history, loan amount and employment status. Includes data preprocessing, model training and evaluation to classify applications as approved or rejected. Technologies: Python, Pandas, NumPy, Scikit-learn.</p>
+  <p class="links">
+    <a href="https://YOUR-LIVE-LINK" aria-label="Live demo of PROJECT NAME">Live demo
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+    </a>
+    <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" aria-label="Source code of PROJECT NAME">Source code
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+    </a>
+  </p>
+</article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="cta-band" data-r>
+          <h2>Let's build something together</h2>
+          <p>Open to junior web and software developer roles, internships and freelance projects.</p>
+          <ul class="contact-list">
+            <li><a class="btn btn-white" href="mailto:YOUR-EMAIL@example.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> YOUR-EMAIL@example.com</a></li>
+            <li><a class="btn btn-ghost-w" href="https://github.com/YOUR-USERNAME"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a></li>
+            <li><a class="btn btn-ghost-w" href="https://www.linkedin.com/in/YOUR-USERNAME"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a></li>
+          </ul>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; <span id="year">2026</span> Abin Jimmy &middot; Kottayam, Kerala, India</p>
+    <div class="wrap foot-row">
+      <a class="brand" href="index.html" aria-label="abinorix home" style="margin-right:0">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span>abinorix<span class="dot">.</span></span>
+      </a>
+      <ul class="foot-nav"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="education.html">Education</a></li><li><a href="projects.html">Projects</a></li></ul>
+      <p>&copy; <span id="year">2026</span> Abin Jimmy &middot; Kerala, India</p>
     </div>
   </footer>
 

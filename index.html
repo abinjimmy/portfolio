@@ -1,36 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ABINORIX | Abin Jimmy, Web Developer</title>
+  <title>abinorix | Abin Jimmy, Web Developer</title>
   <meta name="description" content="Portfolio of Abin Jimmy, a web developer and MCA student from Kerala, India, working with PHP, Laravel, Python and Django.">
-  <meta name="theme-color" content="#06031a">
+  <meta name="theme-color" content="#0c0720">
   <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script>document.documentElement.className += " js";</script>
+  <script>(function(){var r=document.documentElement,t;try{t=localStorage.getItem('abinorix-theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}r.setAttribute('data-theme',t);r.className+=' js'})();</script>
 </head>
 <body>
-  <div class="nebula" aria-hidden="true">
-    <i class="neb neb-a"></i><i class="neb neb-b"></i><i class="neb neb-c"></i><i class="neb neb-d"></i>
-  </div>
-  <canvas id="stars" aria-hidden="true"></canvas>
-  <div class="vignette" aria-hidden="true"></div>
-
+  <div class="glow" aria-hidden="true"></div>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="wrap header-row">
-      <a class="brand" href="index.html" aria-label="ABINORIX home">
+      <a class="brand" href="index.html" aria-label="abinorix home">
         <img src="assets/images/logo.svg" alt="" width="38" height="38">
-        <span>ABINORIX</span>
+        <span>abinorix<span class="dot">.</span></span>
       </a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
       <nav id="site-nav" class="nav-wrap" aria-label="Main">
         <ul class="nav">
           <li><a href="index.html" aria-current="page">Home</a></li>
@@ -38,90 +30,190 @@
           <li><a href="skills.html">Skills</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li class="nav-contact"><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+          <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn-outline btn-sm" href="index.html#contact">Contact</a>
+        <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="wrap hero-wide">
+      <div class="wrap">
         <div class="hero-grid">
-          <div class="hero-text">
-            <p class="eyebrow hero-in" style="--d:.15s">Hello, I'm Abin Jimmy</p>
-            <h1 class="display">
-              <span class="line hero-in" style="--d:.35s">Web</span>
-              <span class="line hero-in" style="--d:.55s">Developer</span>
-            </h1>
-            <p class="roles hero-in" style="--d:.85s">PHP | Laravel | Python | Django<br>&amp; MySQL</p>
-            <a class="btn-neon hero-in" style="--d:1.15s" href="projects.html">Explore my work</a>
-          </div>
-          <div class="portrait hero-in" style="--d:.6s">
-            <div class="portrait-float">
-              <span class="ring ring-1" aria-hidden="true"></span>
-              <span class="ring ring-2" aria-hidden="true"></span>
-              <div class="disc">
-                <img src="assets/images/abin.webp" alt="Portrait of Abin Jimmy" width="732" height="968">
-              </div>
-              <span class="chip chip-1" aria-hidden="true">PHP</span>
-              <span class="chip chip-2" aria-hidden="true">Laravel</span>
-              <span class="chip chip-3" aria-hidden="true">Django</span>
+          <div class="hero-copy">
+            <p class="note fade-up"><span class="pulse"></span> Open to junior developer roles</p>
+            <h1 class="fade-up" style="--d:.12s">Hi, I'm Abin Jimmy. I build <span class="grad">web apps</span> that work.</h1>
+            <p class="sub fade-up" style="--d:.26s">MCA student from Kerala, India. I work with PHP, Laravel, Python and Django, and I am looking for my first role in software and web development.</p>
+            <div class="cta-row fade-up" style="--d:.4s">
+              <a class="btn btn-primary" href="projects.html">View projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+              <a class="btn btn-outline" href="#contact">Get in touch</a>
             </div>
+          </div>
+
+          <div class="visual" aria-hidden="false">
+            <div class="vcard v-art pop" style="--d:.45s"><div class="float-b"><span>&lt;/&gt;</span></div></div>
+            <div class="vcard v-photo pop" style="--d:.3s">
+              <img src="assets/images/abin.webp" alt="Portrait of Abin Jimmy" width="732" height="968">
+            </div>
+            <a class="v-badge" href="projects.html" aria-label="See my projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+            <span class="deco spark d1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12 7 17 12 24 12C17 12 12 17 12 24C12 17 7 12 0 12C7 12 12 7 12 0Z"/></svg></span>
+            <span class="deco spark d2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12 7 17 12 24 12C17 12 12 17 12 24C12 17 7 12 0 12C7 12 12 7 12 0Z"/></svg></span>
+            <span class="deco d3"></span>
+            <span class="deco d4"></span>
+            <span class="deco coin d5"></span>
+            <span class="deco coin d6"></span>
+          </div>
+        </div>
+
+        <div class="tech">
+          <p class="tech-label">Technologies I work with</p>
+          <ul class="tech-row">
+            <li>PHP</li><li>Laravel</li><li>Python</li><li>Django</li><li>MySQL</li><li>GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="squiggle" data-r><svg viewBox="0 0 44 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M2 7 Q7 0 12 7 T22 7 T32 7 T42 7"/></svg></div>
+        <h2 class="section-title" data-r>What I work with</h2>
+        <p class="section-sub" data-r>The languages, frameworks and tools I use to build web applications.</p>
+        <div class="grid-2 section-body">
+          <div class="card wcard" data-r>
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+            <div><h3>Back end</h3><ul class="tags"><li>PHP</li><li>Laravel</li><li>Python</li><li>Django</li></ul></div>
+          </div>
+          <div class="card wcard" data-r>
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></span>
+            <div><h3>Front end</h3><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li></ul></div>
+          </div>
+          <div class="card wcard" data-r>
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
+            <div><h3>Database</h3><ul class="tags"><li>MySQL</li></ul></div>
+          </div>
+          <div class="card wcard" data-r>
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></span>
+            <div><h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>Windows</li><li>Linux</li></ul></div>
           </div>
         </div>
       </div>
-      <a class="scroll-cue" href="#explore" aria-label="Scroll down"></a>
     </section>
 
-    <section class="section" id="explore">
+    <section class="section" style="padding-top:20px">
       <div class="wrap">
-        <h2>Explore</h2>
-        <div class="grid">
-          <a class="card link-card" href="about.html">
-            <span class="num">01</span>
-            <h3>About me</h3>
-            <p>Who I am and what I like to build.</p>
-            <span class="more">Read more</span>
-          </a>
-          <a class="card link-card" href="skills.html">
-            <span class="num">02</span>
-            <h3>Skills</h3>
-            <p>The languages and tools I work with.</p>
-            <span class="more">See skills</span>
-          </a>
-          <a class="card link-card" href="education.html">
-            <span class="num">03</span>
-            <h3>Education</h3>
-            <p>My studies from higher secondary to MCA.</p>
-            <span class="more">See timeline</span>
-          </a>
-          <a class="card link-card" href="projects.html">
-            <span class="num">04</span>
-            <h3>Projects</h3>
-            <p>Websites and applications I have built.</p>
-            <span class="more">View projects</span>
-          </a>
+        <div class="squiggle" data-r><svg viewBox="0 0 44 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M2 7 Q7 0 12 7 T22 7 T32 7 T42 7"/></svg></div>
+        <ul class="stats">
+          <li data-r><strong data-count="3">3</strong><span>Web projects</span></li>
+          <li data-r><strong data-count="10" data-suffix="+">10+</strong><span>Technologies used</span></li>
+          <li data-r><strong data-count="2">2</strong><span>Operating systems</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="projects-preview">
+      <div class="wrap">
+        <div class="squiggle" data-r><svg viewBox="0 0 44 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M2 7 Q7 0 12 7 T22 7 T32 7 T42 7"/></svg></div>
+        <h2 class="section-title" data-r>Featured <span class="grad">projects</span></h2>
+        <div class="carousel section-body" data-carousel>
+          <button class="car-btn car-prev" type="button" aria-label="Previous projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <div class="track" tabindex="0" aria-label="Projects, scroll sideways">
+          <article class="card pcard">
+            <!-- To use a real screenshot, replace the <svg> inside .art with: <img src="assets/images/YOUR-SCREENSHOT.jpg" alt="Online Watch Shopping Website screenshot"> -->
+            <div class="art art-1"><svg viewBox="0 0 300 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect x="112" y="14" width="76" height="100" rx="16" fill="rgba(255,255,255,.35)"/><rect x="112" y="246" width="76" height="100" rx="16" fill="rgba(255,255,255,.35)"/><circle cx="150" cy="180" r="88" fill="rgba(255,255,255,.94)"/><line x1="150.0" y1="118.0" x2="150.0" y2="110.0" stroke="#4f2cf0" stroke-width="4" stroke-linecap="round"/><line x1="181.0" y1="126.3" x2="185.0" y2="119.4" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="203.7" y1="149.0" x2="210.6" y2="145.0" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="212.0" y1="180.0" x2="220.0" y2="180.0" stroke="#4f2cf0" stroke-width="4" stroke-linecap="round"/><line x1="203.7" y1="211.0" x2="210.6" y2="215.0" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="181.0" y1="233.7" x2="185.0" y2="240.6" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="150.0" y1="242.0" x2="150.0" y2="250.0" stroke="#4f2cf0" stroke-width="4" stroke-linecap="round"/><line x1="119.0" y1="233.7" x2="115.0" y2="240.6" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="96.3" y1="211.0" x2="89.4" y2="215.0" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="88.0" y1="180.0" x2="80.0" y2="180.0" stroke="#4f2cf0" stroke-width="4" stroke-linecap="round"/><line x1="96.3" y1="149.0" x2="89.4" y2="145.0" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="119.0" y1="126.3" x2="115.0" y2="119.4" stroke="#4f2cf0" stroke-width="2" stroke-linecap="round"/><line x1="150" y1="180" x2="150" y2="128" stroke="#1b1240" stroke-width="7" stroke-linecap="round"/><line x1="150" y1="180" x2="186" y2="198" stroke="#1b1240" stroke-width="6" stroke-linecap="round"/><circle cx="150" cy="180" r="7" fill="#ec4899"/></svg></div>
+            <p class="meta" style="margin-top:18px">PHP · MySQL</p>
+            <h3 style="margin-top:6px">Online Watch Shopping Website</h3>
+            <p class="desc">An online store for watches built with PHP and MySQL.</p>
+            <p class="links">
+              <a href="#" aria-label="Live demo of Online Watch Shopping Website">Live demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+              <a href="#" aria-label="Source code of Online Watch Shopping Website">Source code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            </p>
+          </article>
+          <article class="card pcard">
+            <!-- To use a real screenshot, replace the <svg> inside .art with: <img src="assets/images/YOUR-SCREENSHOT.jpg" alt="Online Mobile Shopping Cart screenshot"> -->
+            <div class="art art-2"><svg viewBox="0 0 300 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect x="82" y="40" width="136" height="280" rx="26" fill="rgba(255,255,255,.93)"/><rect x="96" y="66" width="108" height="170" rx="14" fill="rgba(79,44,240,.16)"/><g transform="translate(110 102) scale(3.2)" stroke="#4f2cf0" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></g><rect x="102" y="262" width="96" height="30" rx="15" fill="#4f2cf0"/><rect x="128" y="300" width="44" height="5" rx="3" fill="rgba(14,10,31,.25)"/></svg></div>
+            <p class="meta" style="margin-top:18px">Python · Django</p>
+            <h3 style="margin-top:6px">Online Turf Booking Website</h3>
+            <p class="desc">A Online Turf Booking Website for Booking slots built with Django.</p>
+            <p class="links">
+              <a href="#" aria-label="Live demo of Online Mobile Shopping Cart">Live demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+              <a href="#" aria-label="Source code of Online Mobile Shopping Cart">Source code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            </p>
+          </article>
+          <article class="card pcard">
+            <!-- To use a real screenshot, replace the <svg> inside .art with: <img src="assets/images/YOUR-SCREENSHOT.jpg" alt="AI-Powered Toystore Website screenshot"> -->
+            <div class="art art-3"><svg viewBox="0 0 300 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="108" cy="124" r="58" fill="rgba(255,255,255,.94)"/><rect x="150" y="150" width="112" height="112" rx="24" fill="#fde68a"/><polygon points="64,320 128,214 192,320" fill="rgba(255,255,255,.88)"/><circle cx="222" cy="92" r="24" fill="#fbbf24"/><path d="M236 190l8 16 16 8-16 8-8 16-8-16-16-8 16-8z" fill="#7c3aed" transform="translate(-60 40)"/></svg></div>
+            <p class="meta" style="margin-top:18px">Laravel · In development</p>
+            <h3 style="margin-top:6px">AI-Powered Toystore Website</h3>
+            <p class="desc">A toy store website built with Laravel, with AI features. In development.</p>
+            <p class="links">
+              
+              <a href="#" aria-label="Source code of AI-Powered Toystore Website">Source code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            </p>
+          </article>
+          <article class="card pcard cta-card">
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+            <h3>Your idea next</h3>
+            <p>Have a project in mind? Let's talk.</p>
+            <a class="btn btn-primary btn-sm" href="index.html#contact">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+          </article>
+          </div>
+          <button class="car-btn car-next" type="button" aria-label="Next projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="dots" aria-hidden="true"></div>
+        </div>
+        <div class="center"><a class="btn btn-primary" href="projects.html">View all projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="squiggle" data-r><svg viewBox="0 0 44 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M2 7 Q7 0 12 7 T22 7 T32 7 T42 7"/></svg></div>
+        <h2 class="section-title" data-r>Why work <span class="grad">with me?</span></h2>
+        <div class="why section-body">
+          <div class="why-col"><div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span><div><h3>Full-stack basics</h3><p>PHP and Laravel, Python and Django, with MySQL behind them.</p></div></div><div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></span><div><h3>Clean front end</h3><p>HTML, CSS, JavaScript and Bootstrap for responsive pages.</p></div></div><div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span><div><h3>Database driven</h3><p>Shopping and store projects built on MySQL.</p></div></div></div>
+          <div class="orb-wrap" aria-hidden="true">
+            <div class="orb"><img src="assets/images/logo.svg" alt="" width="120" height="120"></div>
+            <span class="deco spark" style="top:6%;right:8%;width:24px;height:24px"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12 7 17 12 24 12C17 12 12 17 12 24C12 17 7 12 0 12C7 12 12 7 12 0Z"/></svg></span>
+            <span class="deco spark" style="bottom:10%;left:6%;width:18px;height:18px;animation-delay:-2s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C12 7 17 12 24 12C17 12 12 17 12 24C12 17 7 12 0 12C7 12 12 7 12 0Z"/></svg></span>
+            <span class="deco coin" style="top:44%;left:-2%;animation-delay:-1s"></span>
+          </div>
+          <div class="why-col"><div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></span><div><h3>Version control</h3><p>Git and GitHub to track and share my code.</p></div></div><div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span><div><h3>Works anywhere</h3><p>Comfortable working on Windows and Linux.</p></div></div><div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span><div><h3>Always learning</h3><p>Currently pursuing an MCA at Santhigiri College.</p></div></div></div>
         </div>
       </div>
     </section>
 
     <section class="section" id="contact">
       <div class="wrap">
-        <h2>Contact</h2>
-        <p class="lead">Open to junior web and software developer roles, internships and freelance projects.</p>
-        <ul class="contact-list">
-          <li><a href="abinjimmy@gmail.com">abinjimmy@gmail.com</a></li>
-          <li><a href="https://github.com/abinjimmy">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/abin-jimmy">LinkedIn</a></li>
-        </ul>
+        <div class="cta-band" data-r>
+          <h2>Let's build something together</h2>
+          <p>Open to junior web and software developer roles, internships and freelance projects.</p>
+          <ul class="contact-list">
+            <li><a class="btn btn-white" href="mailto:YOUR-EMAIL@example.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> YOUR-EMAIL@example.com</a></li>
+            <li><a class="btn btn-ghost-w" href="https://github.com/YOUR-USERNAME"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a></li>
+            <li><a class="btn btn-ghost-w" href="https://www.linkedin.com/in/YOUR-USERNAME"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; <span id="year">2026</span> Abin Jimmy &middot; Kottayam, Kerala, India</p>
+    <div class="wrap foot-row">
+      <a class="brand" href="index.html" aria-label="abinorix home" style="margin-right:0">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span>abinorix<span class="dot">.</span></span>
+      </a>
+      <ul class="foot-nav"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="education.html">Education</a></li><li><a href="projects.html">Projects</a></li></ul>
+      <p>&copy; <span id="year">2026</span> Abin Jimmy &middot; Kerala, India</p>
     </div>
   </footer>
 

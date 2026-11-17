@@ -1,36 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skills | ABINORIX</title>
+  <title>Skills | abinorix</title>
   <meta name="description" content="Skills of Abin Jimmy: PHP, Laravel, Python, Django, JavaScript, HTML, CSS, Bootstrap, MySQL, Git and GitHub.">
-  <meta name="theme-color" content="#06031a">
+  <meta name="theme-color" content="#0c0720">
   <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script>document.documentElement.className += " js";</script>
+  <script>(function(){var r=document.documentElement,t;try{t=localStorage.getItem('abinorix-theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}r.setAttribute('data-theme',t);r.className+=' js'})();</script>
 </head>
 <body>
-  <div class="nebula" aria-hidden="true">
-    <i class="neb neb-a"></i><i class="neb neb-b"></i><i class="neb neb-c"></i><i class="neb neb-d"></i>
-  </div>
-  <canvas id="stars" aria-hidden="true"></canvas>
-  <div class="vignette" aria-hidden="true"></div>
-
+  <div class="glow" aria-hidden="true"></div>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="wrap header-row">
-      <a class="brand" href="index.html" aria-label="ABINORIX home">
+      <a class="brand" href="index.html" aria-label="abinorix home">
         <img src="assets/images/logo.svg" alt="" width="38" height="38">
-        <span>ABINORIX</span>
+        <span>abinorix<span class="dot">.</span></span>
       </a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
       <nav id="site-nav" class="nav-wrap" aria-label="Main">
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
@@ -38,46 +30,88 @@
           <li><a href="skills.html" aria-current="page">Skills</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li class="nav-contact"><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+          <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn-outline btn-sm" href="index.html#contact">Contact</a>
+        <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="page-head">
       <div class="wrap">
-        <p class="eyebrow hero-in">Skills</p>
-        <h1 class="hero-in" style="--d:.2s">What I <span class="accent">work with</span></h1>
+        <p class="note fade-up">Skills</p>
+        <h1 class="fade-up" style="--d:.12s">My <span class="grad">skill set</span></h1>
+        <p class="sub fade-up" style="--d:.24s">Languages, frameworks and tools I use to build web applications.</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="grid grid-3">
-          <div class="card">
-            <h3>Back end</h3>
-            <ul class="tags"><li>PHP</li><li>Laravel</li><li>Python</li><li>Django</li><li>MySQL</li></ul>
-          </div>
-          <div class="card">
-            <h3>Front end</h3>
-            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li></ul>
-          </div>
-          <div class="card">
-            <h3>Tools</h3>
-            <ul class="tags"><li>Git</li><li>GitHub</li><li>Windows</li><li>Linux</li></ul>
-          </div>
+    <section class="section" style="padding-top:44px">
+      <div class="wrap skills-stage">
+        <div class="modules">
+          <article class="module" data-r>
+            <span class="ring" aria-hidden="true"></span>
+            <div class="module-top"><span class="module-id">MODULE_01</span><span class="module-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span></div>
+            <h3>Programming</h3>
+            <ul class="chips"><li style="--i:0">Python</li><li style="--i:1">PHP</li><li style="--i:2">JavaScript</li></ul>
+          </article><article class="module" data-r>
+            <span class="ring" aria-hidden="true"></span>
+            <div class="module-top"><span class="module-id">MODULE_02</span><span class="module-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5a2 2 0 0 0 2 2h1"/><path d="M16 3h1a2 2 0 0 1 2 2v5a2 2 0 0 0 2 2 2 2 0 0 0-2 2v5a2 2 0 0 1-2 2h-1"/></svg></span></div>
+            <h3>Web &amp; frameworks</h3>
+            <ul class="chips"><li style="--i:0">HTML</li><li style="--i:1">CSS</li><li style="--i:2">Bootstrap</li><li style="--i:3">Django</li><li style="--i:4">Laravel</li></ul>
+          </article><article class="module" data-r>
+            <span class="ring" aria-hidden="true"></span>
+            <div class="module-top"><span class="module-id">MODULE_03</span><span class="module-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span></div>
+            <h3>Databases</h3>
+            <ul class="chips"><li style="--i:0">MySQL</li></ul>
+          </article><article class="module" data-r>
+            <span class="ring" aria-hidden="true"></span>
+            <div class="module-top"><span class="module-id">MODULE_04</span><span class="module-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></span></div>
+            <h3>Developer tools</h3>
+            <ul class="chips"><li style="--i:0">Git</li><li style="--i:1">GitHub</li><li style="--i:2">VS Code</li></ul>
+          </article><article class="module" data-r>
+            <span class="ring" aria-hidden="true"></span>
+            <div class="module-top"><span class="module-id">MODULE_05</span><span class="module-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span></div>
+            <h3>Platforms</h3>
+            <ul class="chips"><li style="--i:0">Linux</li><li style="--i:1">Windows</li></ul>
+          </article><article class="module" data-r>
+            <span class="ring" aria-hidden="true"></span>
+            <div class="module-top"><span class="module-id">MODULE_06</span><span class="module-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="3" x2="12" y2="21"/><line x1="4.2" y1="7.5" x2="19.8" y2="16.5"/><line x1="4.2" y1="16.5" x2="19.8" y2="7.5"/></svg></span></div>
+            <h3>Professional skills</h3>
+            <ul class="chips"><li style="--i:0">Self-learning</li></ul>
+          </article>
         </div>
-        <div class="actions">
-          <a class="btn-neon" href="projects.html">See them in my projects</a>
+        <div class="center"><a class="btn btn-primary" href="projects.html">See them in my projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:20px">
+      <div class="wrap">
+        <div class="squiggle" data-r><svg viewBox="0 0 44 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M2 7 Q7 0 12 7 T22 7 T32 7 T42 7"/></svg></div>
+        <h2 class="section-title" data-r>Why work <span class="grad">with me?</span></h2>
+        <div class="grid-3 section-body">
+          <div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span><div><h3>Full-stack basics</h3><p>PHP and Laravel, Python and Django, with MySQL behind them.</p></div></div><div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></span><div><h3>Clean front end</h3><p>HTML, CSS, JavaScript and Bootstrap for responsive pages.</p></div></div><div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span><div><h3>Database driven</h3><p>Shopping and store projects built on MySQL.</p></div></div><div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></span><div><h3>Version control</h3><p>Git and GitHub to track and share my code.</p></div></div><div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span><div><h3>Works anywhere</h3><p>Comfortable working on Windows and Linux.</p></div></div><div class="card fcard" data-r><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span><div><h3>Always learning</h3><p>Currently pursuing an MCA at Santhigiri College.</p></div></div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; <span id="year">2026</span> Abin Jimmy &middot; Kottayam, Kerala, India</p>
+    <div class="wrap foot-row">
+      <a class="brand" href="index.html" aria-label="abinorix home" style="margin-right:0">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span>abinorix<span class="dot">.</span></span>
+      </a>
+      <ul class="foot-nav"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="education.html">Education</a></li><li><a href="projects.html">Projects</a></li></ul>
+      <p>&copy; <span id="year">2026</span> Abin Jimmy &middot; Kerala, India</p>
     </div>
   </footer>
 
